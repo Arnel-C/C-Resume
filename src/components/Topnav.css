@@ -1,0 +1,17 @@
+@keyframes neonGlow {
+    0% { box-shadow: 0 0 5px rgb(255, 187, 0); }
+    25% { box-shadow: 0 0 5px rgb(212, 255, 0); }
+    50% { box-shadow: 0 0 15px rgb(0, 255, 123); }
+    75% { box-shadow: 0 0 15px rgb(0, 21, 255); }
+    100% { box-shadow: 0 0 5px rgb(255, 0, 225); }
+  }
+
+  .changing-shadow {
+    box-shadow: 0 0 5px rgb(254, 254, 254); /* Default shadow */
+    transition: box-shadow 1s ease-in-out; /* Smooth transition */
+  }
+  
+  .changing-shadow:hover {
+    animation: neonGlow 3s infinite alternate; /* Glow effect on hover */
+  }
+  
